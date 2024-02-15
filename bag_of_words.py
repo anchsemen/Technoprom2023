@@ -23,7 +23,7 @@ temp_arr = [['Стратегический проект', 'Слово', 'Час�
 
 
 for i, doc in enumerate(column_data):
-    sorted_indices = tfidf_array[i].argsort()[::-1][:100]  # Limit to top 100
+    sorted_indices = tfidf_array[i].argsort()[::-1][:100]
     for j in sorted_indices:
         tfidf_value = tfidf_array[i][j]
         if tfidf_value > 0:
